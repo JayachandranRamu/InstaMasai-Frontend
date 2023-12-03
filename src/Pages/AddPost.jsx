@@ -13,7 +13,7 @@ const newData={
    body
 }
 console.log(newData);
-axios.post("https://lemon-termite-hem.cyclic.app/posts/add",newData,
+axios.post("https://insta-masai-lsyt.onrender.com/posts/add",newData,
 {headers:
 {authorization:`Bearer ${localStorage.getItem("token")}`}
 })
