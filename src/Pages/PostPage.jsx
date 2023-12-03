@@ -12,7 +12,7 @@ const PostPage = () => {
   const handleEdit = () => {
     axios
       .patch(
-        `https://lemon-termite-hem.cyclic.app/posts/update/${deleted}`,
+        `https://insta-masai-lsyt.onrender.com/posts/update/${deleted}`,
         {
           title,
           body,
@@ -33,7 +33,7 @@ const PostPage = () => {
 
   const handleDelete = (id) => {
     axios
-      .delete(`https://lemon-termite-hem.cyclic.app/posts/delete/${id}`, {
+      .delete(`https://insta-masai-lsyt.onrender.com/posts/delete/${id}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -58,7 +58,7 @@ const PostPage = () => {
   useEffect(() => {
    
     axios
-      .get("https://lemon-termite-hem.cyclic.app/posts/", {
+      .get("https://insta-masai-lsyt.onrender.com/posts/", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
