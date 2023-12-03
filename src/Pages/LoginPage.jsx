@@ -19,7 +19,7 @@ const LoginPage = () => {
             if(form.password.length==0 || form.email.length==0){
                 alert("Fill Your Login Form Properly!")
             }else{
-                axios.post("https://lemon-termite-hem.cyclic.app/users/login",form).then(res=>{alert(res.data.msg)
+                axios.post("https://insta-masai-lsyt.onrender.com/users/login",form).then(res=>{alert(res.data.msg)
                 localStorage.setItem("token",res.data.token)
                 });
                 setForm(initial);
